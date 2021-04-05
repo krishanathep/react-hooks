@@ -1,14 +1,15 @@
 import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Services = () => {
+const Footer = () => {
   return (
     <div>
       <Container>
-        <h1>Services Page</h1>
+        <hr />
+        <p>&copy; 2021 by Bootstrap 4</p>
       </Container>
     </div>
   );
 };
 
-export default Services;
+export default Footer;

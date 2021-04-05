@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Products from './pages/Products'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
             <Products/>
           </Route>
         </Switch>
+        <Footer/>
       </Router>
     </>
   );
