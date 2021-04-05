@@ -1,24 +1,32 @@
-import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function WelcomeMessage(){
-  return <p>Welcome to react hooks!</p>
-}
+import NavBar from "./components/NavBar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Products from './pages/Products'
 
 const App = () => {
-  const [count, setCount] = useState(0);
-
-  useEffect(()=>{
-    console.log(`You clicked ${count} times`)
-  }, [count])
-
   return (
-    <div align="center">
-      <WelcomeMessage/>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>+</button>{" "}
-      <button onClick={() => setCount(count - 1)}>-</button>{" "}
-      <button onClick={() => setCount(0)}>Reset</button>
-    </div>
+    <>
+      <Router>
+        <NavBar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/services">
+            <Services />
+          </Route>
+          <Route path='/products'>
+            <Products/>
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 };
 
