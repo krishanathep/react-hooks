@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, CardDeck, Card, Row, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useParams, useHistory } from "react-router-dom";
+import { format } from 'date-fns'
 import axios from "axios";
 
 const Detail = () => {
@@ -32,7 +33,7 @@ const Detail = () => {
                   <Card>
                     <Card.Body>
                       <Card.Title>{detail.ch_title}</Card.Title>
-                      <Card.Text>{detail.ch_dateadd}</Card.Text>
+                      <Card.Text>{format(new Date(detail.ch_dateadd), 'dd-MMM-yyyy')}</Card.Text>
                     </Card.Body>
                   </Card>
                 </div>

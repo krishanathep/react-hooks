@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Container, Table, Image, Badge, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { format } from 'date-fns'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 
@@ -39,12 +40,14 @@ const Products = () => {
             <td>{product.id}</td>
             <td>{product.title}</td>
             <td>{product.detail}</td>
-            <td>{product.date}</td>
+            <td>
+              {format(new Date(product.date), 'dd-MMM-yyyy')}
+            </td>
             <td><Badge pill variant='info'>{product.view}</Badge></td>
             <td><Image src={product.picture} thumbnail width={100} /></td>
             <td>
               <Link to={`/detail/${product.id}/title/${product.title}`} className='btn btn-primary'>View</Link>{' '}
-              <Button variant='success'>Cart</Button>
+              <Button variant='success'>Add to Cart</Button>
             </td>
           </tr>
           ))}
