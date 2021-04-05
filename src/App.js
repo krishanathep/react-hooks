@@ -4,8 +4,9 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
-import Products from './pages/Products'
-import Footer from './components/Footer'
+import Products from "./pages/Products";
+import Detail from "./pages/Detail";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -22,11 +23,14 @@ const App = () => {
           <Route path="/services">
             <Services />
           </Route>
-          <Route path='/products'>
-            <Products/>
+          <Route path="/products">
+            <Products />
+          </Route>
+          <Route path="/detail/:id/title/:title">
+            <Detail />
           </Route>
         </Switch>
-        <Footer/>
+        <Footer />
       </Router>
     </>
   );
