@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Container, Table, Button } from "react-bootstrap";
+import { Container, Table, Button, Spinner } from "react-bootstrap";
 import axios from "axios";
+import { Link } from 'react-router-dom'
 
 const Foods = () => {
   const [foods, setFoods] = useState([]);
@@ -30,7 +31,7 @@ const Foods = () => {
   if (loading === true) {
     return (
       <div className="text-center mt-5 my-5">
-        <p>loading...</p>
+        <Spinner animation="border" variant="primary" />
       </div>
     );
   }
@@ -47,6 +48,7 @@ const Foods = () => {
     <div>
       <Container>
         <h1>Foods Page</h1>
+        <Button variant='success my-2'>Food Create</Button>
         <Table bordered>
           <thead>
             <tr>
@@ -64,8 +66,8 @@ const Foods = () => {
                   <td>{food.name}</td>
                   <td>{food.price}</td>
                   <td width="25%">
-                    <Button>View</Button>{" "}
-                    <Button variant="success">Update</Button>{" "}
+                    <Link className='btn btn-info' to={`/food-detail/${food._id}`}>View</Link>{" "}
+                    <Button>Update</Button>{" "}
                     <Button variant="danger">Delete</Button>
                   </td>
                 </tr>
