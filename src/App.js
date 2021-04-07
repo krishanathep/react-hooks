@@ -7,6 +7,7 @@ import Services from "./pages/Services";
 import Products from "./pages/Products";
 import Detail from "./pages/Detail";
 import Footer from "./components/Footer";
+import Foods from "./pages/Foods";
 
 const App = () => {
   return (
@@ -28,6 +29,9 @@ const App = () => {
           </Route>
           <Route path="/detail/:id/title/:title">
             <Detail />
+          </Route>
+          <Route path='/foods'>
+            <Foods/>
           </Route>
         </Switch>
         <Footer />
