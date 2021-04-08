@@ -67,7 +67,7 @@ const UserDetail = () => {
             <Card.Text>Email : {user.email}</Card.Text>
             <Card.Text>Phone : {user.phone}</Card.Text>
             <Card.Text>Website : {user.website}</Card.Text>
-          </Card.Body>
+            </Card.Body>
         </Card>
       </Container>
     </div>

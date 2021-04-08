@@ -12,6 +12,7 @@ import CreateNews from './pages/news/CreateNews'
 import EditNews from './pages/news/EditNews'
 import Users from './pages/Users'
 import UserDetail from './pages/UserDetail'
+import Countries from './pages/Countries'
 
 const App = () => {
   return (
@@ -48,6 +49,9 @@ const App = () => {
           </Route>
           <Route path='/userdetail/:id'>
             <UserDetail/>
+          </Route>
+          <Route path='/countries'>
+            <Countries/>
           </Route>
         </Switch>
         <Footer />
