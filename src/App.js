@@ -7,8 +7,11 @@ import Services from "./pages/Services";
 import Products from "./pages/Products";
 import Detail from "./pages/Detail";
 import Footer from "./components/Footer";
-import Foods from "./pages/Foods";
-import FoodDetail from "./pages/FoodDetail";
+import IndexNews from './pages/news/IndexNews'
+import CreateNews from './pages/news/CreateNews'
+import EditNews from './pages/news/EditNews'
+import Users from './pages/Users'
+import UserDetail from './pages/UserDetail'
 
 const App = () => {
   return (
@@ -31,11 +34,20 @@ const App = () => {
           <Route path="/detail/:id/title/:title">
             <Detail />
           </Route>
-          <Route path='/foods'>
-            <Foods/>
+          <Route path='/news/indexnews'>
+            <IndexNews/>
           </Route>
-          <Route path='/food-detail/:id'>
-            <FoodDetail/>
+          <Route path='/news/createnews'>
+            <CreateNews/>
+          </Route>
+          <Route path='news/editnews'>
+            <EditNews/>
+          </Route>
+          <Route path='/users'>
+            <Users/>
+          </Route>
+          <Route path='/userdetail/:id'>
+            <UserDetail/>
           </Route>
         </Switch>
         <Footer />

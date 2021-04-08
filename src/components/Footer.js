@@ -5,8 +5,7 @@ const Footer = () => {
   return (
     <div>
       <Container>
-        <hr />
-        <p>&copy; 2021 by Bootstrap 4</p>
+        <p>&copy; 2021 Create by App-Solution.com</p>
       </Container>
     </div>
   );

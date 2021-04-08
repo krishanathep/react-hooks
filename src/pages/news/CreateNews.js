@@ -1,14 +1,14 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-const FoodDetail = () => {
+const CreateNews = () => {
   return (
     <div>
       <Container>
-        <h1>Food Detail Page</h1>
+        <h1>Create News</h1>
       </Container>
     </div>
   );
 };
 
-export default FoodDetail;
+export default CreateNews;
