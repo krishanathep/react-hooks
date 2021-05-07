@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/react-hooks/static/css/main.2ae47eeb.chunk.css",
-    "main.js": "/react-hooks/static/js/main.c632d09d.chunk.js",
-    "main.js.map": "/react-hooks/static/js/main.c632d09d.chunk.js.map",
+    "main.js": "/react-hooks/static/js/main.ed14bdef.chunk.js",
+    "main.js.map": "/react-hooks/static/js/main.ed14bdef.chunk.js.map",
     "runtime-main.js": "/react-hooks/static/js/runtime-main.bb0d7ac8.js",
     "runtime-main.js.map": "/react-hooks/static/js/runtime-main.bb0d7ac8.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/react-hooks/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.85de8a9a.chunk.js": "/react-hooks/static/js/2.85de8a9a.chunk.js",
-    "static/js/2.85de8a9a.chunk.js.map": "/react-hooks/static/js/2.85de8a9a.chunk.js.map",
+    "static/js/2.2b1d257c.chunk.js": "/react-hooks/static/js/2.2b1d257c.chunk.js",
+    "static/js/2.2b1d257c.chunk.js.map": "/react-hooks/static/js/2.2b1d257c.chunk.js.map",
     "static/js/3.ca3037a7.chunk.js": "/react-hooks/static/js/3.ca3037a7.chunk.js",
     "static/js/3.ca3037a7.chunk.js.map": "/react-hooks/static/js/3.ca3037a7.chunk.js.map",
     "index.html": "/react-hooks/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/react-hooks/static/css/2.4c97ca4f.chunk.css.map",
     "static/css/main.2ae47eeb.chunk.css.map": "/react-hooks/static/css/main.2ae47eeb.chunk.css.map",
-    "static/js/2.85de8a9a.chunk.js.LICENSE.txt": "/react-hooks/static/js/2.85de8a9a.chunk.js.LICENSE.txt"
+    "static/js/2.2b1d257c.chunk.js.LICENSE.txt": "/react-hooks/static/js/2.2b1d257c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bb0d7ac8.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.85de8a9a.chunk.js",
+    "static/js/2.2b1d257c.chunk.js",
     "static/css/main.2ae47eeb.chunk.css",
-    "static/js/main.c632d09d.chunk.js"
+    "static/js/main.ed14bdef.chunk.js"
   ]
 }
