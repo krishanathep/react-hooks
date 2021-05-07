@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Container, Table, Image, Form } from "react-bootstrap";
+import { Container, Table, Image, Form, Row, Col } from "react-bootstrap";
 import axios from "axios";
+import { Link } from 'react-router-dom'
 
 const Countries = () => {
   const [countries, setCountries] = useState([]);
@@ -53,14 +54,17 @@ const Countries = () => {
   return (
     <div>
       <Container>
+        <Row>
+        <Col xs={{span: 4, offset:4}}>
         <h1 className='text-center mt-4 my-3'>Contries List</h1>
-        <Form className="mt-3 my-3">
+        <Form className="mt-3 mb-5">
           <Form.Control
             type="text"
             placeholder="Search Countries"
             onChange={(e) => setSearch(e.target.value)}
           />
         </Form>
+        </Col>
         <Table bordered>
           <tr>
             <th>Flag</th>
@@ -75,8 +79,8 @@ const Countries = () => {
           {filteredCountries.map((c, index) => {
             return (
               <tr key={c.name}>
-                <td><Image src={c.flag} thumbnail width="100" /></td>
-                <td>{c.name}</td>
+                <td><Image src={c.flag} thumbnail width="200" /></td>
+                <td><Link to={`/countriedetail/${c.name}`}>{c.name}</Link></td>
                 <td>{c.region}</td>
                 <td>{c.subregion}</td>
                 <td>{c.capital}</td>
@@ -87,6 +91,7 @@ const Countries = () => {
             );
           })}
         </Table>
+        </Row>
       </Container>
     </div>
   );

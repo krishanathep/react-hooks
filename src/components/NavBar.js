@@ -19,6 +19,8 @@ const NavBar = () => {
             <NavLink className='nav-link' to='/products' activeClassName='active'>Products</NavLink>
             <NavLink className='nav-link' to='/users' activeClassName='active' >Users</NavLink>
             <NavLink className='nav-link' to='/countries' activeClassName='active' >Countries</NavLink>
+            <NavLink className='nav-link' to='/water-management' activeClassName='active' >Water</NavLink>
+            <NavLink className='nav-link' to='/foods' activeClassName='active'>Foods</NavLink>
           </Nav>
         </Container>
       </Navbar>
