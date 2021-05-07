@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+//import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -21,7 +21,7 @@ import CountrieDetail from "./pages/CountrieDetail";
 const App = () => {
   return (
     <>
-      <Router>
+      <HashRouter basename='/'>
         <NavBar />
         <Switch>
           <Route exact path="/">
@@ -78,7 +78,7 @@ const App = () => {
           </Route>
         </Switch>
         <Footer />
-      </Router>
+      </HashRouter>
     </>
   );
 };
